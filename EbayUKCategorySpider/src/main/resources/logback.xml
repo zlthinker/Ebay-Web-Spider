@@ -1,0 +1,52 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>spider.log</file>
+		<encoder>
+			<pattern>%date %level [%thread] %logger{70} [%file:%line] %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date [%thread] %-5level %logger{70} [%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+
+	<root level="error">
+		<appender-ref ref="FILE" />
+	</root>
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>spider.log</file>
+		<encoder>
+			<pattern>%date %level [%thread] %logger{70} [%file:%line] %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date [%thread] %-5level %logger{70} [%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+
+	<root level="error">
+		<appender-ref ref="FILE" />
+	</root>
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+>>>>>>> 8df2c148f1645b134414a46e1476dec8c7d2efac
+</configuration>

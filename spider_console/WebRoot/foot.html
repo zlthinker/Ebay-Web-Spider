@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<div class="row-fluid" style="background-color: #f0ffee;">
+	<div class="span12" style="margin: 26px 0px 30px 0px;">
+		<p align="center">
+			epiclouds@Copyright 2014-<span id="endyear"></span>. 元数据. All Rights
+			Reserved
+		</p>
+	</div>
+</div>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.json.js"></script>
+<script type="text/javascript">
+/* var thing = {plugin: 'jquery-json', version: 2.3};    
+var encoded = $.toJSON( thing ); // '{"plugin":"jquery-json","version":2.3}'   
+var name = $.evalJSON( encoded ).plugin; // "jquery-json"   
+var version = $.evalJSON(encoded).version; // 2.3  */
+$(document).ready(function(){
+	var n=new Date();
+	$("#endyear").text(n.getFullYear());
+});
+function setactive(elementId){
+	var x=$("#"+elementId);
+	x.attr("class", x.attr("class")+" active");
+}
+
+
+
+
+</script>
